@@ -8,7 +8,7 @@ public class Vehicle {
         this.distanceTravelled = 0;
     }
 
-    public void moveForAnHour() {}
+    public void moveForAnHour(boolean isRaining) {}
 
     @Override
     public String toString() {

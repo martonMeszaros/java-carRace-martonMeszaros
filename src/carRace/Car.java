@@ -19,7 +19,7 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void moveForAnHour() {
+    public void moveForAnHour(boolean isRaining) {
         if (speedLimit == 70) {
             distanceTravelled += speedLimit;
         } else {
