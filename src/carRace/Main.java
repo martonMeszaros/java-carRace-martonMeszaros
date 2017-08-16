@@ -27,6 +27,7 @@ public class Main {
             newCarName += " " + carNames[randomGen.nextInt(carNames.length)];
             int newCarSpeedRandomness = randomGen.nextInt(31); // The difference between 110 and 80
             vehicles.add(new Car(newCarName, 80 + newCarSpeedRandomness));
+            vehicles.add(new Motorcycle());
         }
     }
 
@@ -39,7 +40,7 @@ public class Main {
             Car.setSpeedLimit(newCarSpeedLimit);
             
             for (Vehicle vehicle : vehicles) {
-                vehicle.moveForAnHour();
+                vehicle.moveForAnHour(isRaining);
             }
         }
     }
