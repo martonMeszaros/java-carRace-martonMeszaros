@@ -28,6 +28,7 @@ public class Main {
             int newCarSpeedRandomness = randomGen.nextInt(31); // The difference between 110 and 80
             vehicles.add(new Car(newCarName, 80 + newCarSpeedRandomness));
             vehicles.add(new Motorcycle());
+            vehicles.add(new Truck());
         }
     }
 
